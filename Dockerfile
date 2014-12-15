@@ -1,7 +1,7 @@
 #
 # jpodeszwik/elasticsearch Dockerfile
 #
-FROM dockerfile/java:oracle-java8 
+FROM jpodeszwik/rpi-java:1.8.0_06
 
 # Install elasticsearch
 ENV ES_CONFIG_PATH /data/config/elasticsearch.yml 
