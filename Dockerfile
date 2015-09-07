@@ -1,11 +1,11 @@
 #
 # jpodeszwik/elasticsearch Dockerfile
 #
-FROM jpodeszwik/rpi-java:1.8.0_06
+FROM rpidockers/java:1.8.0_60
 
 # Install elasticsearch
 ENV ES_CONFIG_PATH /data/config/elasticsearch.yml 
-ENV ES_VERSION 1.4.1
+ENV ES_VERSION 1.7.1
 RUN \
   cd /tmp && \
   wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-$ES_VERSION.tar.gz && \
