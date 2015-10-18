@@ -18,5 +18,5 @@ $ docker run -d -e ES_NETWORK_PUBLISH_HOST=<public_ip> -p 9200:9200 -p 9300:9300
 
 example:
 ```
-docker run -d -e ES_NETWORK_PUBLISH_HOST=192.168.1.1 -p 9200:9200 -p 9300:9300 -v /elasticsearch:/data rpidockers/elasticsearch
+$ docker run -d -e ES_NETWORK_PUBLISH_HOST=192.168.1.1 -p 9200:9200 -p 9300:9300 -v /elasticsearch:/data rpidockers/elasticsearch
 ```
