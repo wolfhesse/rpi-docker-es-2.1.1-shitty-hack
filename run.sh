@@ -39,5 +39,14 @@ if [ ! -f $ES_CONFIG_PATH ]; then
     fi
 fi
 
-exec /opt/elasticsearch/bin/elasticsearch -Des.config=$ES_CONFIG_PATH
+# und zurueckkopieren..
+cp /data/config/elasticsearch.yml /opt/elasticsearch/config/
+
+#exec /opt/elasticsearch/bin/elasticsearch -Des.config=$ES_CONFIG_PATH
+
+#nochmal cand:del
+chown -R elasticsearch /opt/elasticsearch
+chown -R elasticsearch /data
+#exec sudo -u elasticsearch /opt/elasticsearch/bin/elasticsearch
+/opt/elasticsearch/bin/elasticsearch
 
